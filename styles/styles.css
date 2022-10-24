@@ -20,12 +20,8 @@ body {
   background-color: var(--color-white-color);
   position: relative;
 }
-.nav-list .link,
-.adresse {
-  transition: color var(--color-hover-animation),
-    box-shadow var(--color-hover-animation),
-    background-color var(--color-hover-animation);
-}
+
+
 /* --------Утилиты----------- */
 .container {
   margin: 0 auto;
@@ -138,6 +134,9 @@ p {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
+}
+.link-head-hover {
+transition: var(--color-hover-animation);
 }
 
 .link:hover,
@@ -273,8 +272,8 @@ p {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   transition: color var(--color-hover-animation),
-    box-shadow var(--color-hover-animation),
-    background-color var(--color-hover-animation);
+  opacity var(--color-hover-animation),
+  visibility var(--color-hover-animation);
 }
 
 .modal {
@@ -310,8 +309,8 @@ p {
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--color-white-color);
-  transition: color var(--color-hover-animation),
-    fill var(--color-hover-animation), box-shadow var(--color-hover-animation),
+   transition: color var(--color-hover-animation),
+    box-shadow var(--color-hover-animation),
     background-color var(--color-hover-animation);
 }
 .invis-btn:hover {
@@ -520,14 +519,13 @@ p {
   justify-content: center;
   border-radius: 50%;
   transition: color var(--color-hover-animation),
-    fill var(--color-hover-animation), box-shadow var(--color-hover-animation),
     background-color var(--color-hover-animation);
 }
 
 .net-link .net-icon {
   fill: var(--color-icon);
   transition: color var(--color-hover-animation),
-    fill var(--color-hover-animation), box-shadow var(--color-hover-animation),
+    fill var(--color-hover-animation),
     background-color var(--color-hover-animation);
 }
 
@@ -571,9 +569,7 @@ p {
   border-radius: 5px;
   color: var(--color-icon);
   transition: color var(--color-hover-animation),
-    border-color var(--color-hover-animation),
-    box-shadow var(--color-hover-animation),
-    background-color var(--color-hover-animation);
+    border-color var(--color-hover-animation);
 }
 
 .customers-icon {
@@ -590,7 +586,9 @@ p {
 }
 
 /* FOOTER */
-
+.footer-inf-position {
+  margin-right: 70px;
+}
 .logo-footer {
   display: block;
   margin-bottom: 20px;
@@ -615,9 +613,7 @@ p {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.1;
-  transition: color var(--color-hover-animation),
-    box-shadow var(--color-hover-animation),
-    background-color var(--color-hover-animation);
+  transition: color var(--color-hover-animation);
 }
 
 .adresse-footer:hover,
@@ -636,7 +632,6 @@ p {
 .foot-cont {
   display: flex;
   align-items: baseline;
-  gap: 70px;
 }
 
 .location {
@@ -668,9 +663,7 @@ p {
   justify-content: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: color var(--color-hover-animation),
-    box-shadow var(--color-hover-animation),
-    background-color var(--color-hover-animation);
+  transition: background-color var(--color-hover-animation);
 }
 .foot-icon {
   fill: var(--color-white-color);
@@ -703,9 +696,16 @@ p {
 .foot-position {
   display: block;
   align-items: center;
+  margin-right: 93px;
 }
 /* ------Footer Form------ */
+.footer-input-position {
+display: inline-block;
+align-items: center;
+  /* padding-left: 93px; */
+}
 .footer-title {
+ display: inline-block;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -717,12 +717,13 @@ p {
   display: block;
 }
 .footer-input {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.2;
-align-items: center;
-background-color: var(--color-background);
-padding-left: 16px;
+  
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  align-items: center;
+  background-color: var(--color-background);
+  padding-left: 16px;
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -730,31 +731,28 @@ padding-left: 16px;
   border-radius: 4px;
 }
 .footer-btn-form {
-  display: inline-flex;
+
   align-items: center;
   padding: 10px 28px;
-margin-left: 12px;
+  margin-left: 12px;
 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   color: var(--color-white-color);
   background-color: var(--color-thirdary);
-
-background: var(--color-thirdary);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-border-color: var(--color-thirdary);
-
-
+border: none;
+  background: var(--color-thirdary);
+  border-radius: 4px;
+  border-color: var(--color-thirdary);
 
   transform: color var(--color-hover-animation),
-  border-color var(--color-hover-animation),
-  box-shadow var(--color-hover-animation);
+    border-color var(--color-hover-animation),
+    box-shadow var(--color-hover-animation);
 }
 .footer-btn-icon {
-margin-left: 10px;
-fill: var(--color-white-color);
+  margin-left: 10px;
+  fill: var(--color-white-color);
 }
 .footer-btn-form:hover {
   background-color: var(--color-button-hover);
@@ -884,7 +882,6 @@ fill: var(--color-white-color);
 
 /*---------- Form --------- */
 
-
 textarea {
   resize: none;
 }
@@ -911,7 +908,7 @@ textarea {
   line-height: 14px;
   color: rgba(117, 117, 117, 0.5);
 }
-.form-title{
+.form-title {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -927,8 +924,7 @@ textarea {
   width: 448px;
   height: 40px;
   padding-left: 42px;
-  transition: border-color var(--color-hover-animation),
-    color var(--color-hover-animation), box-shadow var(--color-hover-animation);
+  transition: border-color var(--color-hover-animation);
 }
 .lable-checkbox {
   display: flex;

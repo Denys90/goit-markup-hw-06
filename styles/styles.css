@@ -720,7 +720,8 @@ p {
   color: var(--color-white-color);
 }
 .footer-form {
-  display: block;
+  display: flex;
+
 }
 .footer-input {
   font-weight: 400;
@@ -736,6 +737,8 @@ p {
   border-radius: 4px;
 }
 .footer-btn-form {
+  display: flex;
+  align-items: center;
   padding: 10px 28px;
   margin-left: 12px;
   font-weight: 700;
@@ -989,6 +992,7 @@ p {
   border-radius: 2px;
   z-index: 0;
   transition: background-color var(--color-thirdary);
+  transition: border-color var(--color-hover-animation), background-color var(--color-hover-animation), fill var(--color-hover-animation);
 }
 .checkbox-check {
   display: block;
@@ -998,6 +1002,7 @@ p {
   transform: translate(-50%, -50%);
   z-index: 1;
   fill: var(--color-white-color);
+  
 }
 .checkbox-input:hover + .checkbox-control {
   border-color: var(--color-thirdary);

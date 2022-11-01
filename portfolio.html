@@ -368,10 +368,10 @@
             </li>
           </ul>
         </div>
-        <div class="mailing-list">
-          <div>
+        <form class="mailing-list">
+          <div class="mailing-lis__position">
             <span class="invitation">Підпишіться на розсилку</span>
-            <label class="visually-hidden" for="mailing-list"> </label>
+            <label class="visually-hidden" for="mailing-list"> email</label>
             <input
               class="mailing-list__input"
               type="email"
@@ -380,15 +380,14 @@
               placeholder="E-mail"
             />
           </div>
-          <div class="mailing-list__button-position">
-            <button class="mailing-list__button" type="submit">
-              Підписатися
-              <svg class="mailing-list__icon" width="24" height="24">
-                <use href="./styles/icons/icons.svg#icon-modalka-send"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
+
+          <button class="mailing-list__button" type="submit">
+            Підписатися
+            <svg class="mailing-list__icon" width="24" height="24">
+              <use href="./styles/icons/icons.svg#icon-modalka-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
   </body>

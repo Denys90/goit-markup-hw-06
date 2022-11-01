@@ -607,9 +607,7 @@ p {
 }
 
 /* FOOTER */
-.footer-inf-position {
-  margin-right: 70px;
-}
+
 .logo-footer {
   display: block;
   margin-bottom: 20px;
@@ -654,6 +652,7 @@ p {
 .foot-cont {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .location {
@@ -664,6 +663,7 @@ p {
   font-size: 14px;
   line-height: 1.7;
   outline: none;
+  letter-spacing: 0.3;
 }
 
 .adresse-loc .list-adresse {
@@ -722,18 +722,20 @@ p {
 .foot-position {
   display: block;
   align-items: center;
-  margin-right: 93px;
+  /* margin-right: 93px; */
 }
 /* ------Footer Form------ */
 
 .mailing-list {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
  
 }
 
 .mailing-list__input {
   width: 358px;
+  height: 50px;
   padding: 15px 16px;
   border: 1px solid var(--color-icon);
   border-radius: 4px;
@@ -748,21 +750,17 @@ p {
 .mailing-list__input:hover {
   border-color: var(--color-thirdary);
 }
-.asd {
-  margin-left: 93px;
-}
-.mailing-list__button-position {
-  display: flex;
-  align-items: center;
-}
+
 .mailing-list__button {
+  height: 50px;
+  width: 200px;
   display: flex;
-  align-items: center;
   padding: 10px 28px;
   margin-left: 12px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
+  letter-spacing: 0.06em;
   color: var(--color-white-color);
   border: none;
   background: var(--color-thirdary);

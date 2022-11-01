@@ -368,24 +368,27 @@
             </li>
           </ul>
         </div>
-
-        <form class="form-footer" lang="uk" action="a" for="email">
-          <label class="footer-form">Підпишіться на розсилку </label>
-          <input
-            class="footer-input"
-            type="email"
-            name="email"
-            placeholder="E-mail"
-            id="email"
-          />
-
-          <button class="footer-btn-form" type="submit">
-            Підписатися
-            <svg class="footer-btn-icon" width="24" height="24">
-              <use href="./styles/icons/icons.svg#icon-modalka-send"></use>
-            </svg>
-          </button>
-        </form>
+        <div class="mailing-list">
+          <div>
+            <span class="invitation">Підпишіться на розсилку</span>
+            <label class="visually-hidden" for="mailing-list"> </label>
+            <input
+              class="mailing-list__input"
+              type="email"
+              name="email"
+              id="mailing-list"
+              placeholder="E-mail"
+            />
+          </div>
+          <div class="mailing-list__button-position">
+            <button class="mailing-list__button" type="submit">
+              Підписатися
+              <svg class="mailing-list__icon" width="24" height="24">
+                <use href="./styles/icons/icons.svg#icon-modalka-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

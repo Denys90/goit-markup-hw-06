@@ -742,17 +742,15 @@ p {
   color: var(--color-icon);
   transition: border-color var(--color-hover-animation);
 }
-.form-input:focus {
+.mailing-list__input:focus {
   border-color: var(--color-thirdary);
 }
-.form-input:hover {
+.mailing-list__input:hover {
   border-color: var(--color-thirdary);
 }
-.form-input:hover + .form-icon {
-  fill: var(--color-thirdary);
+.asd {
+  margin-left: 93px;
 }
-
-
 .mailing-list__button-position {
   display: flex;
   align-items: center;
